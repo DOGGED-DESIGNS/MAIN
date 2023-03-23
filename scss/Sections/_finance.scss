@@ -1,0 +1,18 @@
+.finance-card {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  &__bank {
+    margin-bottom: 30px;
+    & > h4,
+    span {
+      display: inline-block;
+    }
+
+    & > h4 {
+      @include semiTitleMobile;
+      text-transform: capitalize;
+      font-weight: $font-w;
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+// para desktop;
+@mixin paraDesktop {
+  font-size: 1.2rem;
+  line-height: 30px;
+  font-family: $Raleway;
+  // color: $gray;
+}
+
+// para tablet;
+
+@mixin paraMobile {
+  font-size: 1rem;
+  line-height: 30px;
+  // color: $gray;
+  font-family: $Raleway;
+}
+
+// para mobile;
+
+// semiTitle desktop
+@mixin semiTitleDesktop {
+  font-size: 1.6rem;
+  line-height: 35px;
+  // color: $secondary;
+  font-family: $Raleway;
+}
+// semiTitle mobile;
+
+@mixin semiTitleMobile {
+  font-size: 1.5rem;
+  // color: $secondary;
+  font-family: $Roboto;
+  line-height: 35px;
+}
+
+// bigTitle desktop;
+
+@mixin bigTitleDesktop {
+  font-size: 2.5rem;
+  // color: $secondary;
+  font-family: $Roboto;
+  line-height: 40px;
+}
+
+// bitTitle mobile;
+
+@mixin bigTitleMobile {
+  font-size: 2rem;
+  // color: $secondary;
+  font-family: $Roboto;
+  line-height: 40px;
+}

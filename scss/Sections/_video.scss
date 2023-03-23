@@ -1,0 +1,30 @@
+.gifz {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background: $gif-bg;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  &__img {
+    max-width: 400px;
+    margin: auto;
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+.contentz {
+  padding-top: 100px;
+
+  &__video {
+    max-width: 700px;
+    margin: auto;
+
+    & > video {
+      width: 100%;
+    }
+  }
+}

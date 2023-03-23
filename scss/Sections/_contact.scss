@@ -1,0 +1,66 @@
+.contactz {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  &__socials {
+    margin-top: 100px;
+    &--icons {
+      max-width: 380px;
+      padding: 10px;
+      margin-bottom: 60px;
+      & > p {
+        @include paraDesktop;
+        color: $primary-clr;
+        width: 80%;
+      }
+      & > a:hover > i {
+        filter: grayscale(2);
+      }
+      & > a > i {
+        font-size: 38px;
+        color: $secondary-clr;
+      }
+    }
+  }
+  &__input {
+    background: $bg2;
+    height: 34px;
+    @include paraMobile;
+    color: $primary-clr;
+    padding: 19px;
+    margin-bottom: 24px;
+    border: transparent;
+    width: 100%;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    &::placeholder {
+      @include paraMobile;
+      color: $gray-5;
+      text-transform: capitalize;
+      letter-spacing: 3px;
+      // font-weight: $font-wb;
+    }
+  }
+  &__textarea {
+    background: $bg2;
+    //   height: 34px;
+    @include paraMobile;
+    padding: 19px;
+    color: $primary-clr;
+    margin-bottom: 24px;
+    border: transparent;
+    width: 100%;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    &::placeholder {
+      @include paraMobile;
+      color: $gray-5;
+      text-transform: capitalize;
+      letter-spacing: 3px;
+      // font-weight: $font-wb;
+    }
+  }
+}

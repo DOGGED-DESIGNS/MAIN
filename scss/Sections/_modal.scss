@@ -1,0 +1,70 @@
+.modal-content {
+  &__textarea {
+    background: $bg2;
+    @include paraMobile;
+    padding: 19px;
+    color: $primary-clr;
+    margin-bottom: 24px;
+    border: transparent;
+    width: 100%;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    &::placeholder {
+      @include paraMobile;
+      color: $gray-5;
+      text-transform: capitalize;
+      letter-spacing: 3px;
+      font-size: 14px !important;
+    }
+  }
+  &__h4 {
+    @include paraDesktop;
+    text-align: center;
+    color: $primary-clr;
+    text-transform: capitalize;
+    font-weight: $font-wb;
+  }
+  &__p {
+    @include paraMobile;
+    color: $accent-clr;
+    text-align: center;
+  }
+  &__input {
+    background: $bg2;
+    height: 34px;
+    @include paraMobile;
+    color: $primary-clr;
+    padding: 19px;
+    margin-bottom: 24px;
+    border: transparent;
+    width: 100%;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    &::placeholder {
+      @include paraMobile;
+      color: $gray-5;
+      text-transform: capitalize;
+      letter-spacing: 3px;
+      font-size: 14px !important;
+    }
+
+    & + span {
+      & i {
+        color: $secondary-clr;
+        font-size: 21px;
+      }
+      // border: 1px solid red;
+      background: $bg2;
+      display: inline-block;
+      width: 34px;
+      height: 38px;
+      margin: 0px;
+      display: grid;
+      place-items: center;
+    }
+  }
+}

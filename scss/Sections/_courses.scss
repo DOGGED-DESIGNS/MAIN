@@ -1,0 +1,175 @@
+.courses {
+  //   border: 2px solid red;
+  background: url("../img/curle.svg") 5% 5% / 100px no-repeat,
+    url("../img/smile.svg") 90% 5% / 100px no-repeat;
+  & > h4 {
+    @include paraMobile;
+    font-weight: $font-wb;
+    text-align: center;
+    color: $accent-clr;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+  }
+  & > h1 {
+    @include bigTitleMobile;
+    color: $primary-clr;
+    text-align: center;
+    font-weight: $font-w;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+  }
+}
+
+.cardz {
+  & .smallz {
+    padding: 0px 20px;
+    border-radius: 20px;
+    background: $accent-clr;
+    color: white;
+    @include paraMobile;
+    font-weight: $font-w;
+    display: flex;
+    place-items: center;
+    position: absolute;
+    top: 310px;
+    transform: translateY(-50%);
+    left: 10%;
+  }
+  &__img {
+    width: 100%;
+    height: 310px;
+    border-radius: 9px;
+    // border: 1px solid orange;
+    position: relative;
+    // overflow: hidden;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 9px;
+    }
+  }
+
+  &__info {
+    margin-top: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 20px;
+    & > h2 {
+      @include semiTitleMobile;
+      color: $secondary-clr;
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: $font-wb;
+    }
+    & > p {
+      @include paraMobile;
+      color: $gray-5;
+    }
+    & .funding {
+      width: 100%;
+
+      & .goals {
+        & > p {
+          //   width: 75%;
+          @include paraMobile;
+          font-weight: $font-wb;
+          margin: 0px;
+          display: inline-block;
+          color: $secondary-clr;
+        }
+        &__raised {
+          @include paraMobile;
+          color: $secondary-clr;
+          text-transform: capitalize;
+          margin: 0px;
+          font-weight: $font-wb;
+        }
+        &__img {
+          height: 21px;
+          width: 21px;
+          display: inline-block;
+          margin: 0px;
+          //   border: 2px solid orange;
+
+          & > img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      & .raised {
+        // width: 200px;
+        &__raised {
+          @include paraMobile;
+          color: $accent-clr;
+          text-transform: capitalize;
+          margin: 0px;
+          font-weight: $font-wb;
+        }
+        & > p {
+          //   width: 75%;
+          @include paraMobile;
+          font-weight: $font-wb;
+          margin: 0px;
+          display: inline-block;
+          color: $accent-clr;
+        }
+        // width: 150px;
+        &__img {
+          height: 20px;
+          width: 20px;
+          display: inline-block;
+          margin: 0px;
+
+          & > img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  background: $white;
+  width: 100%;
+  //   position: absolute;
+  margin-bottom: 100px;
+  //   top: 0px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  box-shadow: $box-shadow;
+  border-radius: 9px;
+}
+
+.changing {
+  padding-top: 100px;
+  &__lives {
+    max-width: 700px;
+    margin-right: auto;
+    & > h4 {
+      @include semiTitleMobile;
+      color: $primary-clr;
+      font-weight: $font-wb;
+      text-transform: capitalize;
+    }
+  }
+  &__eval {
+    max-width: 400px;
+    border-radius: 9px;
+    margin-left: auto;
+    padding: 10px;
+    margin-top: 20px;
+    background: url("../img/flower.svg") 5% 95% / 70px no-repeat, $bg1;
+    & > h4 {
+      @include paraMobile;
+      color: $secondary-clr;
+      text-align: center;
+      font-weight: $font-wb;
+    }
+    & > p {
+      @include paraMobile;
+      color: $accent-clr;
+      font-weight: $font-wb;
+    }
+  }
+}

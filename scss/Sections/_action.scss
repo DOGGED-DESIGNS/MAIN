@@ -1,0 +1,100 @@
+.miss {
+  background: $bg2 !important;
+}
+.action {
+  padding-top: 150px;
+
+  background: url("../img/smile.svg") 10% 5%/ 100px no-repeat;
+  &__tabz {
+    display: flex;
+    justify-content: space-around;
+    height: 58px;
+    background: $bg1;
+    & > a {
+      & > i {
+        color: $accent-clr;
+        font-size: 23px;
+      }
+      display: block;
+      text-decoration: none;
+      list-style: none;
+      text-transform: capitalize;
+      margin-top: auto;
+
+      padding: 7px;
+      @include paraMobile;
+      color: $primary-clr;
+      font-weight: $font-wb;
+      background: transparent;
+    }
+  }
+  &__info {
+    padding-top: 100px;
+    // padding: 10px;
+    & > p {
+      @include paraMobile;
+      color: $gray-5;
+      display: none;
+    }
+  }
+
+  &__call {
+    @include paraMobile;
+    color: $accent-clr;
+    font-weight: $font-w;
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+
+  &__volunteer {
+    @include semiTitleMobile;
+    font-weight: $font-wb;
+    color: $primary-clr;
+    text-transform: capitalize;
+  }
+  &__formz {
+    padding-top: 40px;
+    & textarea {
+      background: $bg2;
+      //   height: 34px;
+      @include paraMobile;
+      padding: 19px;
+      color: $primary-clr;
+      margin-bottom: 24px;
+      border: transparent;
+      width: 100%;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+      &::placeholder {
+        @include paraMobile;
+        color: $gray-5;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        // font-weight: $font-wb;
+      }
+    }
+    & input {
+      background: $bg2;
+      height: 34px;
+      @include paraMobile;
+      color: $primary-clr;
+      padding: 19px;
+      margin-bottom: 24px;
+      border: transparent;
+      width: 100%;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+      &::placeholder {
+        @include paraMobile;
+        color: $gray-5;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        // font-weight: $font-wb;
+      }
+    }
+  }
+}

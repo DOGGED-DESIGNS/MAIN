@@ -1,0 +1,51 @@
+.footer {
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    max-width: 270px;
+    flex-wrap: wrap;
+    & > a {
+      display: block;
+      &:hover > i {
+        filter: grayscale(2);
+      }
+      & > i {
+        color: $accent-clr;
+        font-size: 28px;
+      }
+    }
+  }
+  & > P {
+    @include paraMobile;
+    text-align: center;
+    text-transform: capitalize;
+    color: $gray-7;
+    margin: top 70px;
+  }
+
+  & > h5 {
+    @include paraMobile;
+    color: $white;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  margin-top: 170px;
+
+  background: url("../img/kite.svg") 92% 5%/ 100px no-repeat,
+    url("../img/smile.svg") 4% 95% / 100px no-repeat, $primary-clr;
+
+  &__h5 {
+    @include semiTitleMobile;
+    color: $white;
+    font-weight: $font-wb;
+  }
+  &__p {
+    @include paraMobile;
+    color: $gray-7;
+    text-transform: capitalize;
+  }
+}

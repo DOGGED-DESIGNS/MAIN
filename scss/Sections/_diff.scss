@@ -1,0 +1,82 @@
+.difference {
+  //   border: 2px solid black;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: url("../img/lines.svg") 90% 0% / 100px 100px no-repeat;
+}
+
+.diff {
+  //   border: 2px solid orange;
+  height: 581px;
+  max-width: 510px;
+  background: url("../img/diffback.svg") 100% 50%/ 400px 400px no-repeat;
+  position: relative;
+  @include custom {
+    background: url("../img/diffback.svg") 100% 50% / 300px 300px no-repeat;
+  }
+  &__img-top {
+    position: absolute;
+    padding: 10px;
+    height: 288px;
+    max-width: 222px;
+    background: white;
+    z-index: 100;
+    top: 0px;
+    left: 240px;
+    @include custom {
+      padding: 10px;
+      left: 80px !important;
+      height: 268px !important;
+      max-width: 202px !important;
+    }
+    & > img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__img-bottom {
+    height: 288px;
+    max-width: 222px;
+    position: absolute;
+    left: 41px;
+    bottom: 90px;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.makeing {
+  //   border: 2px solid red;
+  &__title {
+    @include bigTitleMobile;
+    text-transform: capitalize;
+    color: $primary-clr;
+    font-weight: $font-w !important;
+  }
+  & > p {
+    @include paraMobile;
+    color: $gray-5;
+  }
+}
+
+.makeing__info {
+  width: 100%;
+
+  & > p {
+    width: 85%;
+    @include paraMobile;
+    color: $gray-5;
+  }
+  & .img {
+    height: 40px;
+    width: 10%;
+    & > img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
