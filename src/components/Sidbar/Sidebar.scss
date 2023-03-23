@@ -1,0 +1,101 @@
+.sidez {
+  width: 100% !important;
+  height: 100vh;
+  position: fixed;
+  background: white;
+  z-index: 100;
+
+  overflow-y: auto;
+  @media (max-width: 780px) {
+  }
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  & > ul {
+    padding: 7px;
+    & > a > li {
+      padding: 5px;
+      margin-top: 5px;
+      margin-left: 10px;
+      text-decoration: none;
+      list-style: none;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background: rgb(255, 220, 255);
+      }
+    }
+  }
+  & > a > div {
+    padding: 10px;
+    color: purple;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 22px;
+  }
+}
+.side {
+  height: 100vh;
+  max-width: 200px;
+  overflow-y: auto;
+  @media (max-width: 780px) {
+    width: 0px !important;
+  }
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  & > ul {
+    padding: 7px;
+    & > a > li {
+      padding: 5px;
+      margin-top: 5px;
+      margin-left: 10px;
+      text-decoration: none;
+      list-style: none;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background: rgb(255, 220, 255);
+      }
+    }
+  }
+  & > a > div {
+    padding: 10px;
+    color: purple;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 22px;
+  }
+}
+
+.ick {
+  color: purple;
+  margin-right: 5px;
+}
+
+.themezz {
+  display: flex !important;
+  max-width: 180px;
+  justify-content: space-between !important;
+  & > div {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    &:nth-child(1) {
+      background: orange;
+    }
+    &:nth-child(2) {
+      background: purple;
+    }
+    &:nth-child(3) {
+      background: brown;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.datatable {
+  height: 600px;
+  padding-top: 20px;
+}
+
+.Approved {
+  color: rgb(3, 64, 3);
+  background: rgb(169, 243, 169);
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.Pending {
+  color: rgb(93, 93, 2);
+  padding: 3px 7px;
+  background: rgb(245, 245, 93);
+  border-radius: 5px;
+}
+
+.Passive {
+  color: rgb(250, 11, 11);
+  background-color: rgb(255, 185, 185);
+  padding: 3px 7px;
+  border-radius: 5px;
+}

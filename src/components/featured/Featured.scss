@@ -1,0 +1,12 @@
+.featured {
+  height: auto;
+  max-width: 1000px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px rgb(155, 155, 155);
+  border-radius: 5px;
+  & > .tests {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+}

@@ -1,0 +1,54 @@
+.navzz {
+  width: 87%;
+  position: fixed;
+  z-index: 5;
+  @media (max-width: "780px") {
+    width: 100%;
+  }
+}
+
+.toggle {
+  @media (min-width: 780px) {
+    display: none !important;
+  }
+}
+
+.navz {
+  display: flex !important;
+  @media (max-width: 780px) {
+    flex-direction: column-reverse !important;
+  }
+  padding: 8px 14px 8px 14px;
+  top: 0.23rem !important;
+  box-shadow: 1px 10px 4px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 10px 4px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 10px 4px -10px rgba(0, 0, 0, 0.75);
+
+  & .input {
+  }
+  & .iconsz {
+    display: flex !important;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.ch {
+  @media (max-width: 780px) {
+    font-size: 20px !important;
+  }
+}
+
+.profilez {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  & > img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}

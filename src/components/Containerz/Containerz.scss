@@ -1,0 +1,25 @@
+.cont-grid {
+  display: grid !important;
+  margin-top: 90px;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 780px) {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  grid-gap: 20px;
+}
+
+.listContainer {
+  box-shadow: 0px 0px 5px rgb(155, 155, 155);
+  padding: 20px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: minmax(200px, auto);
+  @media (max-width: 780px) {
+    grid-template-columns: 1fr;
+  }
+}
